@@ -1,0 +1,1091 @@
+2025-04-26 19:20:13,487 - main - INFO - db creating
+2025-04-26 19:20:27,827 - main - INFO - db creating
+2025-04-26 19:20:27,943 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:20:27,955 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:20:27,955 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:20:27,956 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:20:40,236 - main - INFO - db creating
+2025-04-26 19:20:40,344 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:20:40,348 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:20:40,348 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:20:40,349 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:20:41,022 - main.services.esp - INFO - db creating
+2025-04-26 19:20:41,035 - main.services.auth - INFO - db creating
+2025-04-26 19:20:41,102 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:20:41,103 - main.__init__ - INFO - db creating
+2025-04-26 19:20:41,104 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:21:13,497 - main - INFO - db creating
+2025-04-26 19:21:13,609 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:21:13,613 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:21:13,614 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:21:13,614 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:22:11,511 - main - INFO - db creating
+2025-04-26 19:22:11,643 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:22:11,647 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:22:11,647 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:22:11,648 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:22:12,251 - main.services.esp - INFO - db creating
+2025-04-26 19:22:12,256 - main.services.auth - INFO - db creating
+2025-04-26 19:22:12,306 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:22:12,307 - main.__init__ - INFO - db creating
+2025-04-26 19:22:12,308 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:22:12,326 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:22:12,326 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:22:12,412 - main.__init__ - CRITICAL - Ошибка подключения к БД: connection was closed in the middle of operation
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+OSError: [WinError 64] Указанное сетевое имя более недоступно
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 826, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Указанное сетевое имя более недоступно
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\My_projects\signal\backend\server\microservices\main\__init__.py", line 17, in create_uuid_table
+    conn = await get_database_connection()
+  File "c:\My_projects\signal\backend\server\microservices\main\core\database_conf.py", line 62, in get_database_connection
+    return await asyncpg.connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connection.py", line 2421, in connect
+    return await connect_utils._connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 1049, in _connect
+    conn = await _connect_addr(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 886, in _connect_addr
+    return await __connect_addr(params, True, *args)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 934, in __connect_addr
+    await connected
+asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+2025-04-26 19:23:21,223 - main - INFO - db creating
+2025-04-26 19:23:21,338 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:23:21,341 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:23:21,341 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:23:21,341 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:23:21,915 - main.services.esp - INFO - db creating
+2025-04-26 19:23:21,920 - main.services.auth - INFO - db creating
+2025-04-26 19:23:21,968 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:23:21,971 - main.__init__ - INFO - db creating
+2025-04-26 19:23:21,972 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:23:21,988 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:23:21,990 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:23:22,074 - main.__init__ - CRITICAL - Ошибка подключения к БД: connection was closed in the middle of operation
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+OSError: [WinError 64] Указанное сетевое имя более недоступно
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 826, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Указанное сетевое имя более недоступно
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\My_projects\signal\backend\server\microservices\main\__init__.py", line 17, in create_uuid_table
+    conn = await get_database_connection()
+  File "c:\My_projects\signal\backend\server\microservices\main\core\database_conf.py", line 62, in get_database_connection
+    return await asyncpg.connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connection.py", line 2421, in connect
+    return await connect_utils._connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 1049, in _connect
+    conn = await _connect_addr(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 886, in _connect_addr
+    return await __connect_addr(params, True, *args)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 934, in __connect_addr
+    await connected
+asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+2025-04-26 19:23:29,328 - main - INFO - db creating
+2025-04-26 19:23:29,452 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:23:29,456 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:23:29,457 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:23:29,457 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:23:30,046 - main.services.esp - INFO - db creating
+2025-04-26 19:23:30,051 - main.services.auth - INFO - db creating
+2025-04-26 19:23:30,101 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:23:30,102 - main.__init__ - INFO - db creating
+2025-04-26 19:23:30,103 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:23:30,118 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:23:30,118 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:23:30,201 - main.__init__ - CRITICAL - Ошибка подключения к БД: connection was closed in the middle of operation
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+OSError: [WinError 64] Указанное сетевое имя более недоступно
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 826, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Указанное сетевое имя более недоступно
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\My_projects\signal\backend\server\microservices\main\__init__.py", line 17, in create_uuid_table
+    conn = await get_database_connection()
+  File "C:\My_projects\signal\backend\server\microservices\main\core\database_conf.py", line 62, in get_database_connection
+    return await asyncpg.connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connection.py", line 2421, in connect
+    return await connect_utils._connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 1049, in _connect
+    conn = await _connect_addr(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 886, in _connect_addr
+    return await __connect_addr(params, True, *args)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 934, in __connect_addr
+    await connected
+asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+2025-04-26 19:24:59,856 - main - INFO - db creating
+2025-04-26 19:24:59,972 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:24:59,972 - main.utils.ssl_utils - INFO - SSL сертификаты не найдены, генерируем новые
+2025-04-26 19:24:59,997 - main.utils.ssl_utils - INFO - Сертификат сохранен в C:\My_projects\signal\backend\certificate.crt
+2025-04-26 19:24:59,998 - main.utils.ssl_utils - INFO - Приватный ключ сохранен в C:\My_projects\signal\backend\private.key
+2025-04-26 19:24:59,999 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:24:59,999 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:25:00,228 - main - INFO - db creating
+2025-04-26 19:25:00,941 - main.services.esp - INFO - db creating
+2025-04-26 19:25:00,945 - main.services.auth - INFO - db creating
+2025-04-26 19:25:00,992 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:25:00,993 - main.__init__ - INFO - db creating
+2025-04-26 19:25:00,994 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:25:01,011 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:25:01,011 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:25:01,092 - main.__init__ - CRITICAL - Ошибка подключения к БД: connection was closed in the middle of operation
+Traceback (most recent call last):
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\asyncio\selector_events.py", line 862, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\My_projects\signal\backend\server\microservices\main\__init__.py", line 17, in create_uuid_table
+    conn = await get_database_connection()
+  File "C:\My_projects\signal\backend\server\microservices\main\core\database_conf.py", line 62, in get_database_connection
+    return await asyncpg.connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connection.py", line 2421, in connect
+    return await connect_utils._connect(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 1049, in _connect
+    conn = await _connect_addr(
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 886, in _connect_addr
+    return await __connect_addr(params, True, *args)
+  File "C:\anaconda3\envs\protect_of_terrorist_attacks\lib\site-packages\asyncpg\connect_utils.py", line 934, in __connect_addr
+    await connected
+asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+2025-04-26 19:28:01,083 - __main__ - INFO - Server started
+2025-04-26 19:28:02,263 - main - INFO - db creating
+2025-04-26 19:28:02,377 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:28:02,381 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:28:02,381 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:28:02,382 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-26 19:28:02,597 - main - INFO - db creating
+2025-04-26 19:28:03,265 - main.services.esp - INFO - db creating
+2025-04-26 19:28:03,268 - main.services.auth - INFO - db creating
+2025-04-26 19:28:03,314 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:28:03,316 - main.__init__ - INFO - db creating
+2025-04-26 19:28:03,317 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:28:03,332 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:28:03,333 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:28:03,413 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 19:28:03,415 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 19:28:03,488 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 19:28:03,490 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 19:28:03,674 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 19:28:03,749 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 19:28:33,531 - main.api.app - INFO - Stopping lifespan...
+2025-04-26 19:28:33,736 - __main__ - INFO - Server started
+2025-04-26 19:28:34,834 - main - INFO - db creating
+2025-04-26 19:28:34,944 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:28:34,948 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:28:34,948 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:28:34,948 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-26 19:28:35,162 - main - INFO - db creating
+2025-04-26 19:28:35,829 - main.services.esp - INFO - db creating
+2025-04-26 19:28:35,833 - main.services.auth - INFO - db creating
+2025-04-26 19:28:35,881 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:28:35,882 - main.__init__ - INFO - db creating
+2025-04-26 19:28:35,883 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:28:35,899 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:28:35,899 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:28:35,979 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 19:28:35,981 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 19:28:36,055 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 19:28:36,057 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 19:28:36,131 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 19:28:36,205 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 19:29:46,923 - main.routers.auth - INFO - Login attempt for user: , Sadovnikov, СЫЫР, [], password, 
+2025-04-26 19:29:46,923 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-26 19:30:35,889 - main.routers.auth - INFO - Login attempt for user: None, ыва, ыва, [], password, None
+2025-04-26 19:30:35,889 - main.services.auth_service - INFO - Попытка аутентификации пользователя: ыва, пароль: ыва
+2025-04-26 19:30:50,092 - main.routers.auth - INFO - Login attempt for user: None, Sadovnikov, СЫЫР, [], password, None
+2025-04-26 19:30:50,093 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-26 19:30:54,450 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-04-26 19:54:25,630 - main.api.app - INFO - Stopping lifespan...
+2025-04-26 19:54:25,943 - main - INFO - db creating
+2025-04-26 19:54:26,627 - main.services.esp - INFO - db creating
+2025-04-26 19:54:26,631 - main.services.auth - INFO - db creating
+2025-04-26 19:54:26,678 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:54:26,679 - main.__init__ - INFO - db creating
+2025-04-26 19:54:26,680 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:54:26,696 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:54:26,696 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:54:26,778 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 19:54:26,780 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 19:54:26,855 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 19:54:26,857 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 19:54:26,929 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 19:54:27,004 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 19:56:39,308 - main.api.app - INFO - Stopping lifespan...
+2025-04-26 19:56:39,608 - main - INFO - db creating
+2025-04-26 19:56:40,276 - main.services.esp - INFO - db creating
+2025-04-26 19:56:40,280 - main.services.auth - INFO - db creating
+2025-04-26 19:56:40,326 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:56:40,327 - main.__init__ - INFO - db creating
+2025-04-26 19:56:40,328 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:56:40,344 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:56:40,344 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:56:40,421 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 19:56:40,424 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 19:56:40,495 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 19:56:40,497 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 19:56:40,568 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 19:56:40,640 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 19:56:40,729 - __main__ - INFO - Server started
+2025-04-26 19:56:41,963 - main - INFO - db creating
+2025-04-26 19:56:42,076 - __main__ - INFO - Starting Uvicorn server...
+2025-04-26 19:56:42,079 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-26 19:56:42,079 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-26 19:56:42,080 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-26 19:56:42,299 - main - INFO - db creating
+2025-04-26 19:56:42,968 - main.services.esp - INFO - db creating
+2025-04-26 19:56:42,972 - main.services.auth - INFO - db creating
+2025-04-26 19:56:43,016 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 19:56:43,018 - main.__init__ - INFO - db creating
+2025-04-26 19:56:43,019 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 19:56:43,035 - main.api.app - INFO - Starting lifespan...
+2025-04-26 19:56:43,035 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 19:56:43,115 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 19:56:43,117 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 19:56:43,199 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 19:56:43,202 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 19:56:43,280 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 19:56:43,468 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 20:01:41,941 - main.api.app - INFO - Stopping lifespan...
+2025-04-26 20:01:42,279 - main - INFO - db creating
+2025-04-26 20:01:42,970 - main.services.esp - INFO - db creating
+2025-04-26 20:01:42,974 - main.services.auth - INFO - db creating
+2025-04-26 20:01:43,021 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 20:01:43,022 - main.__init__ - INFO - db creating
+2025-04-26 20:01:43,023 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 20:01:43,040 - main.api.app - INFO - Starting lifespan...
+2025-04-26 20:01:43,040 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 20:01:43,229 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 20:01:43,231 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 20:01:43,302 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 20:01:43,304 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 20:01:43,376 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 20:01:43,450 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 20:22:36,229 - main.api.app - INFO - Stopping lifespan...
+2025-04-26 20:22:36,514 - main - INFO - db creating
+2025-04-26 20:22:37,203 - main.services.esp - INFO - db creating
+2025-04-26 20:22:37,207 - main.services.auth - INFO - db creating
+2025-04-26 20:22:37,254 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 20:22:37,255 - main.__init__ - INFO - db creating
+2025-04-26 20:22:37,256 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 20:22:37,272 - main.api.app - INFO - Starting lifespan...
+2025-04-26 20:22:37,272 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 20:22:37,349 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 20:22:37,351 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 20:22:37,424 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 20:22:37,427 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 20:22:37,500 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 20:22:37,573 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-26 21:22:36,252 - main.api.app - INFO - Stopping lifespan...
+2025-04-26 21:22:36,544 - main - INFO - db creating
+2025-04-26 21:22:37,468 - main.services.esp - INFO - db creating
+2025-04-26 21:22:37,472 - main.services.auth - INFO - db creating
+2025-04-26 21:22:37,527 - main.services.esp.__init__ - INFO - db creating
+2025-04-26 21:22:37,528 - main.__init__ - INFO - db creating
+2025-04-26 21:22:37,529 - main.services.auth.__init__ - INFO - db creating
+2025-04-26 21:22:37,545 - main.api.app - INFO - Starting lifespan...
+2025-04-26 21:22:37,545 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-26 21:22:37,628 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-26 21:22:37,630 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-26 21:22:37,701 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-26 21:22:37,703 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-26 21:22:37,779 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-26 21:22:37,853 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 00:15:51,518 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 00:15:51,850 - main - INFO - db creating
+2025-04-27 00:15:52,650 - main.services.esp - INFO - db creating
+2025-04-27 00:15:52,654 - main.services.auth - INFO - db creating
+2025-04-27 00:15:52,720 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 00:15:52,722 - main.__init__ - INFO - db creating
+2025-04-27 00:15:52,722 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 00:15:52,740 - main.api.app - INFO - Starting lifespan...
+2025-04-27 00:15:52,740 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 00:15:52,824 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 00:15:52,826 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 00:15:52,901 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 00:15:52,904 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 00:15:52,977 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 00:15:53,054 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 00:17:23,826 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 00:17:24,119 - main - INFO - db creating
+2025-04-27 00:17:24,824 - main.services.esp - INFO - db creating
+2025-04-27 00:17:24,829 - main.services.auth - INFO - db creating
+2025-04-27 00:17:24,876 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 00:17:24,878 - main.__init__ - INFO - db creating
+2025-04-27 00:17:24,879 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 00:17:24,895 - main.api.app - INFO - Starting lifespan...
+2025-04-27 00:17:24,895 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 00:17:24,983 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 00:17:24,984 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 00:17:25,061 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 00:17:25,062 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 00:17:25,136 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 00:17:25,211 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 00:17:25,329 - __main__ - INFO - Server started
+2025-04-27 00:20:02,865 - main - INFO - db creating
+2025-04-27 00:20:02,977 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 00:20:02,980 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 00:20:02,981 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 00:20:02,981 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-27 00:20:03,207 - main - INFO - db creating
+2025-04-27 00:20:03,896 - main.services.esp - INFO - db creating
+2025-04-27 00:20:03,900 - main.services.auth - INFO - db creating
+2025-04-27 00:20:03,954 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 00:20:03,955 - main.__init__ - INFO - db creating
+2025-04-27 00:20:03,957 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 00:20:03,974 - main.api.app - INFO - Starting lifespan...
+2025-04-27 00:20:03,974 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 00:20:04,054 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 00:20:04,056 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 00:20:04,130 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 00:20:04,133 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 00:20:04,206 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 00:20:04,280 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 00:20:18,404 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 00:20:18,597 - __main__ - INFO - Server started
+2025-04-27 00:20:19,521 - main - INFO - db creating
+2025-04-27 00:20:19,633 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 00:20:19,636 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 00:20:19,637 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 00:20:19,637 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-27 00:20:19,868 - main - INFO - db creating
+2025-04-27 00:20:20,554 - main.services.esp - INFO - db creating
+2025-04-27 00:20:20,558 - main.services.auth - INFO - db creating
+2025-04-27 00:20:20,605 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 00:20:20,606 - main.__init__ - INFO - db creating
+2025-04-27 00:20:20,607 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 00:20:20,623 - main.api.app - INFO - Starting lifespan...
+2025-04-27 00:20:20,624 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 00:20:20,702 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 00:20:20,704 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 00:20:20,778 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 00:20:20,780 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 00:20:20,855 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 00:20:20,932 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 00:20:22,088 - __main__ - INFO - Server started
+2025-04-27 00:20:24,746 - main - INFO - db creating
+2025-04-27 00:20:24,860 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 00:20:24,864 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 00:20:24,864 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 00:20:24,864 - __main__ - INFO - Запуск сервера https://0.0.0.0:5000
+2025-04-27 00:20:25,096 - main - INFO - db creating
+2025-04-27 00:20:25,791 - main.services.esp - INFO - db creating
+2025-04-27 00:20:25,795 - main.services.auth - INFO - db creating
+2025-04-27 00:20:25,846 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 00:20:25,848 - main.__init__ - INFO - db creating
+2025-04-27 00:20:25,849 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 00:20:25,864 - main.api.app - INFO - Starting lifespan...
+2025-04-27 00:20:25,865 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 00:20:25,950 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 00:20:25,953 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 00:20:26,028 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 00:20:26,030 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 00:20:26,104 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 00:20:26,181 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 00:20:27,145 - __main__ - INFO - Server started
+2025-04-27 01:43:04,856 - main - INFO - db creating
+2025-04-27 01:43:04,969 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 01:43:29,427 - main - INFO - db creating
+2025-04-27 01:43:29,538 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 01:43:29,541 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 01:43:29,541 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 01:43:29,542 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 01:43:29,763 - main - INFO - db creating
+2025-04-27 01:43:30,466 - main.services.esp - INFO - db creating
+2025-04-27 01:43:30,723 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 01:43:30,724 - main.__init__ - INFO - db creating
+2025-04-27 01:43:30,725 - main.services.auth - INFO - db creating
+2025-04-27 01:43:30,726 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 01:43:30,761 - main.api.app - INFO - Starting lifespan...
+2025-04-27 01:43:30,762 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 01:43:30,944 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 01:43:30,946 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 01:43:31,018 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 01:43:31,020 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 01:43:31,099 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 01:43:31,175 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 01:44:52,433 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 01:44:52,776 - main - INFO - db creating
+2025-04-27 01:44:53,488 - main.services.esp - INFO - db creating
+2025-04-27 01:44:53,625 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 01:44:53,626 - main.__init__ - INFO - db creating
+2025-04-27 01:44:53,627 - main.services.auth - INFO - db creating
+2025-04-27 01:44:53,628 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 01:44:53,663 - main.api.app - INFO - Starting lifespan...
+2025-04-27 01:44:53,664 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 01:44:53,742 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 01:44:53,744 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 01:44:53,817 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 01:44:53,819 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 01:44:53,892 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 01:44:53,969 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 01:48:29,406 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 01:48:29,738 - main - INFO - db creating
+2025-04-27 01:48:30,461 - main.services.esp - INFO - db creating
+2025-04-27 01:48:30,612 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 01:48:30,613 - main.__init__ - INFO - db creating
+2025-04-27 01:48:30,614 - main.services.auth - INFO - db creating
+2025-04-27 01:48:30,615 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 01:48:30,662 - main.api.app - INFO - Starting lifespan...
+2025-04-27 01:48:30,662 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 01:48:30,741 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 01:48:30,744 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 01:48:30,817 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 01:48:30,819 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 01:48:30,891 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 01:48:30,966 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 01:51:33,656 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 01:51:33,969 - main - INFO - db creating
+2025-04-27 01:51:34,708 - main.services.esp - INFO - db creating
+2025-04-27 01:51:34,872 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 01:51:34,873 - main.__init__ - INFO - db creating
+2025-04-27 01:51:34,874 - main.services.auth - INFO - db creating
+2025-04-27 01:51:34,875 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 01:51:34,915 - main.api.app - INFO - Starting lifespan...
+2025-04-27 01:51:34,915 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 01:51:35,000 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 01:51:35,001 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 01:51:35,080 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 01:51:35,082 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 01:51:35,156 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 01:51:35,233 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 01:57:52,742 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 01:57:53,052 - main - INFO - db creating
+2025-04-27 01:57:53,758 - main.services.esp - INFO - db creating
+2025-04-27 01:57:53,902 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 01:57:53,903 - main.__init__ - INFO - db creating
+2025-04-27 01:57:53,904 - main.services.auth - INFO - db creating
+2025-04-27 01:57:53,906 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 01:57:53,940 - main.api.app - INFO - Starting lifespan...
+2025-04-27 01:57:53,941 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 01:57:54,021 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 01:57:54,023 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 01:57:54,097 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 01:57:54,100 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 01:57:54,175 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 01:57:54,260 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:02:52,271 - main - INFO - db creating
+2025-04-27 02:02:52,393 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 02:02:52,396 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 02:02:52,396 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 02:02:52,397 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 02:02:52,631 - main - INFO - db creating
+2025-04-27 02:02:53,340 - main.services.esp - INFO - db creating
+2025-04-27 02:02:53,482 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:02:53,483 - main.__init__ - INFO - db creating
+2025-04-27 02:02:53,484 - main.services.auth - INFO - db creating
+2025-04-27 02:02:53,485 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:02:53,520 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:02:53,520 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:02:53,603 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:02:53,605 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:02:53,683 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:02:53,685 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:02:53,760 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:02:53,837 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:03:14,745 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:03:15,048 - main - INFO - db creating
+2025-04-27 02:03:15,765 - main.services.esp - INFO - db creating
+2025-04-27 02:03:15,907 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:03:15,908 - main.__init__ - INFO - db creating
+2025-04-27 02:03:15,909 - main.services.auth - INFO - db creating
+2025-04-27 02:03:15,910 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:03:15,946 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:03:15,947 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:03:16,027 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:03:16,030 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:03:16,112 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:03:16,114 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:03:16,193 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:03:16,377 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:03:39,938 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:03:40,023 - __main__ - INFO - Server started
+2025-04-27 02:09:49,389 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:09:49,696 - main - INFO - db creating
+2025-04-27 02:09:50,419 - main.services.esp - INFO - db creating
+2025-04-27 02:09:50,561 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:09:50,563 - main.__init__ - INFO - db creating
+2025-04-27 02:09:50,564 - main.services.auth - INFO - db creating
+2025-04-27 02:09:50,565 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:09:50,614 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:09:50,614 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:09:50,695 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:09:50,698 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:09:50,799 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:09:50,802 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:09:50,987 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:09:51,065 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:14:45,962 - main - INFO - db creating
+2025-04-27 02:14:46,083 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 02:14:46,086 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 02:14:46,087 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 02:14:46,087 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 02:14:46,331 - main - INFO - db creating
+2025-04-27 02:14:47,074 - main.services.esp - INFO - db creating
+2025-04-27 02:14:47,220 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:14:47,222 - main.__init__ - INFO - db creating
+2025-04-27 02:14:47,223 - main.services.auth - INFO - db creating
+2025-04-27 02:14:47,225 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:14:47,262 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:14:47,262 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:14:47,347 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:14:47,349 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:14:47,429 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:14:47,432 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:14:47,512 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:14:47,590 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:14:49,274 - main - INFO - db creating
+2025-04-27 02:14:49,394 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 02:14:49,397 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 02:14:49,398 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 02:14:49,398 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 02:14:49,644 - main - INFO - db creating
+2025-04-27 02:14:50,403 - main.services.esp - INFO - db creating
+2025-04-27 02:14:50,564 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:14:50,565 - main.__init__ - INFO - db creating
+2025-04-27 02:14:50,567 - main.services.auth - INFO - db creating
+2025-04-27 02:14:50,568 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:14:50,611 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:14:50,612 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:14:50,798 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:14:50,800 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:14:50,881 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:14:50,882 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:14:50,964 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:14:51,044 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:23:47,313 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:23:47,382 - __main__ - INFO - Server started
+2025-04-27 02:23:49,068 - main - INFO - db creating
+2025-04-27 02:23:49,183 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 02:23:49,186 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 02:23:49,186 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 02:23:49,187 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 02:23:49,422 - main - INFO - db creating
+2025-04-27 02:23:50,138 - main.services.esp - INFO - db creating
+2025-04-27 02:23:50,280 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:23:50,281 - main.__init__ - INFO - db creating
+2025-04-27 02:23:50,283 - main.services.auth - INFO - db creating
+2025-04-27 02:23:50,284 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:23:50,319 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:23:50,319 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:23:50,400 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:23:50,402 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:23:50,474 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:23:50,476 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:23:50,548 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:23:50,623 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:24:20,451 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:24:20,787 - main - INFO - db creating
+2025-04-27 02:24:21,497 - main.services.esp - INFO - db creating
+2025-04-27 02:24:21,634 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:24:21,634 - main.__init__ - INFO - db creating
+2025-04-27 02:24:21,637 - main.services.auth - INFO - db creating
+2025-04-27 02:24:21,638 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:24:21,672 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:24:21,673 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:24:21,753 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:24:21,756 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:24:21,937 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:24:21,939 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:24:22,122 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:24:22,199 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:24:33,323 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:24:33,638 - main - INFO - db creating
+2025-04-27 02:24:34,397 - main.services.esp - INFO - db creating
+2025-04-27 02:24:34,553 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:24:34,555 - main.__init__ - INFO - db creating
+2025-04-27 02:24:34,556 - main.services.auth - INFO - db creating
+2025-04-27 02:24:34,557 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:24:34,596 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:24:34,597 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:24:34,679 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:24:34,681 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:24:34,756 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:24:34,758 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:24:34,838 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:24:34,917 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:24:51,902 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:24:52,231 - main - INFO - db creating
+2025-04-27 02:24:52,967 - main.services.esp - INFO - db creating
+2025-04-27 02:24:53,125 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:24:53,127 - main.__init__ - INFO - db creating
+2025-04-27 02:24:53,128 - main.services.auth - INFO - db creating
+2025-04-27 02:24:53,130 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:24:53,166 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:24:53,167 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:24:53,249 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:24:53,251 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:24:53,331 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:24:53,332 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:24:53,408 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:24:53,486 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:25:04,737 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:25:05,047 - main - INFO - db creating
+2025-04-27 02:25:05,777 - main.services.esp - INFO - db creating
+2025-04-27 02:25:05,927 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:25:05,929 - main.__init__ - INFO - db creating
+2025-04-27 02:25:05,930 - main.services.auth - INFO - db creating
+2025-04-27 02:25:05,931 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:25:05,970 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:25:05,970 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:25:06,054 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:25:06,056 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:25:06,135 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:25:06,137 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:25:06,211 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:25:06,290 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:25:23,311 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:25:23,638 - main - INFO - db creating
+2025-04-27 02:25:24,375 - main.services.esp - INFO - db creating
+2025-04-27 02:25:24,524 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:25:24,525 - main.__init__ - INFO - db creating
+2025-04-27 02:25:24,526 - main.services.auth - INFO - db creating
+2025-04-27 02:25:24,528 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:25:24,563 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:25:24,563 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:25:24,643 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:25:24,646 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:25:24,724 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:25:24,726 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:25:24,799 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:25:24,875 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:25:36,140 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:25:36,491 - main - INFO - db creating
+2025-04-27 02:25:37,222 - main.services.esp - INFO - db creating
+2025-04-27 02:25:37,363 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:25:37,364 - main.__init__ - INFO - db creating
+2025-04-27 02:25:37,365 - main.services.auth - INFO - db creating
+2025-04-27 02:25:37,366 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:25:37,401 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:25:37,402 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:25:37,482 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:25:37,483 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:25:37,558 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:25:37,560 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:25:37,636 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:25:37,833 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:25:39,427 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:25:39,735 - main - INFO - db creating
+2025-04-27 02:25:40,476 - main.services.esp - INFO - db creating
+2025-04-27 02:25:40,628 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:25:40,629 - main.__init__ - INFO - db creating
+2025-04-27 02:25:40,631 - main.services.auth - INFO - db creating
+2025-04-27 02:25:40,632 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:25:40,672 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:25:40,672 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:25:40,755 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:25:40,757 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:25:40,835 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:25:40,837 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:25:40,910 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:25:41,088 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:25:42,625 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:25:42,938 - main - INFO - db creating
+2025-04-27 02:25:43,664 - main.services.esp - INFO - db creating
+2025-04-27 02:25:43,808 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:25:43,809 - main.__init__ - INFO - db creating
+2025-04-27 02:25:43,811 - main.services.auth - INFO - db creating
+2025-04-27 02:25:43,812 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:25:43,847 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:25:43,847 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:25:43,927 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:25:43,929 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:25:44,112 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:25:44,114 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:25:44,189 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:25:44,270 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:26:20,421 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:26:20,498 - __main__ - INFO - Server started
+2025-04-27 02:26:21,822 - main - INFO - db creating
+2025-04-27 02:26:21,937 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 02:26:21,941 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 02:26:21,941 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 02:26:21,941 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 02:26:22,168 - main - INFO - db creating
+2025-04-27 02:26:22,882 - main.services.esp - INFO - db creating
+2025-04-27 02:26:23,022 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:26:23,023 - main.__init__ - INFO - db creating
+2025-04-27 02:26:23,024 - main.services.auth - INFO - db creating
+2025-04-27 02:26:23,025 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:26:23,060 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:26:23,060 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:26:23,140 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:26:23,142 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:26:23,216 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:26:23,218 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:26:23,293 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:26:23,367 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:26:28,183 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:26:28,208 - __main__ - INFO - Server started
+2025-04-27 02:26:29,251 - main - INFO - db creating
+2025-04-27 02:26:29,360 - __main__ - INFO - Starting Uvicorn server...
+2025-04-27 02:26:29,363 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-04-27 02:26:29,363 - __main__ - INFO - SSL/TLS успешно настроен
+2025-04-27 02:26:29,364 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-04-27 02:26:29,597 - main - INFO - db creating
+2025-04-27 02:26:30,286 - main.services.esp - INFO - db creating
+2025-04-27 02:26:30,415 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:26:30,416 - main.__init__ - INFO - db creating
+2025-04-27 02:26:30,417 - main.services.auth - INFO - db creating
+2025-04-27 02:26:30,419 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:26:30,453 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:26:30,453 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:26:30,534 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:26:30,536 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:26:30,724 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:26:30,726 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:26:30,803 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:26:30,877 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:26:34,887 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:26:34,961 - __main__ - INFO - Server started
+2025-04-27 02:30:44,889 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:30:45,176 - main - INFO - db creating
+2025-04-27 02:30:45,873 - main.services.esp - INFO - db creating
+2025-04-27 02:30:45,878 - main.services.auth - INFO - db creating
+2025-04-27 02:30:45,930 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:30:45,932 - main.__init__ - INFO - db creating
+2025-04-27 02:30:45,933 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:30:45,949 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:30:45,950 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:30:46,030 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:30:46,033 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:30:46,107 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:30:46,110 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:30:46,183 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:30:46,259 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:35:45,958 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:35:46,245 - main - INFO - db creating
+2025-04-27 02:35:46,955 - main.services.esp - INFO - db creating
+2025-04-27 02:35:46,959 - main.services.auth - INFO - db creating
+2025-04-27 02:37:29,766 - main - INFO - db creating
+2025-04-27 02:37:30,483 - main.services.esp - INFO - db creating
+2025-04-27 02:37:30,487 - main.services.auth - INFO - db creating
+2025-04-27 02:37:35,795 - main - INFO - db creating
+2025-04-27 02:37:36,471 - main.services.esp - INFO - db creating
+2025-04-27 02:37:36,475 - main.services.auth - INFO - db creating
+2025-04-27 02:37:36,642 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:37:36,643 - main.__init__ - INFO - db creating
+2025-04-27 02:37:36,644 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:37:36,660 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:37:36,660 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:37:36,849 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:37:36,851 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:37:36,927 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:37:36,928 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:37:37,005 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:37:37,085 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:37:55,240 - main.routers.auth - INFO - Login attempt for user: None, Sadovnikov, СЫЫР, [], password, None
+2025-04-27 02:37:55,240 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:37:55,325 - main.services.auth_service - ERROR - Ошибка при получении пользователя: 1 validation error for UserInDB
+password_hash
+  Field required [type=missing, input_value={'id': 1, 'username': 'Sa...=datetime.timezone.utc)}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-04-27 02:39:08,101 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:39:08,419 - main - INFO - db creating
+2025-04-27 02:39:09,096 - main.services.esp - INFO - db creating
+2025-04-27 02:39:09,101 - main.services.auth - INFO - db creating
+2025-04-27 02:39:09,278 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:39:09,279 - main.__init__ - INFO - db creating
+2025-04-27 02:39:09,280 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:39:09,296 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:39:09,296 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:39:09,389 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:39:09,391 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:39:09,464 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:39:09,466 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:39:09,542 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:39:09,615 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:39:09,626 - main.routers.auth - INFO - Login attempt for user: None, Sadovnikov, СЫЫР, [], password, None
+2025-04-27 02:39:09,626 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:39:11,348 - main.routers.auth - INFO - Login attempt for user: None, Sadovnikov, СЫЫР, [], password, None
+2025-04-27 02:39:11,348 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:42:27,654 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:42:27,974 - main - INFO - db creating
+2025-04-27 02:42:28,664 - main.services.esp - INFO - db creating
+2025-04-27 02:42:28,669 - main.services.auth - INFO - db creating
+2025-04-27 02:42:28,840 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:42:28,841 - main.__init__ - INFO - db creating
+2025-04-27 02:42:28,843 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:42:28,859 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:42:28,860 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:42:28,952 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:42:28,954 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:42:29,031 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:42:29,033 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:42:29,106 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:42:29,181 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:42:29,194 - main.routers.auth - INFO - Login attempt for user: None, Sadovnikov, СЫЫР, [], password, None
+2025-04-27 02:42:29,194 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:43:38,053 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:43:38,389 - main - INFO - db creating
+2025-04-27 02:43:39,089 - main.services.esp - INFO - db creating
+2025-04-27 02:43:39,094 - main.services.auth - INFO - db creating
+2025-04-27 02:43:39,270 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:43:39,271 - main.__init__ - INFO - db creating
+2025-04-27 02:43:39,273 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:43:39,289 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:43:39,289 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:43:39,381 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:43:39,383 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:43:39,463 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:43:39,465 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:43:39,642 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:43:39,720 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:43:39,732 - main.routers.auth - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:43:39,733 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:44:08,524 - main.routers.auth - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:44:08,524 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:45:31,983 - main.routers.auth - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:45:31,984 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:49:31,101 - main - INFO - db creating
+2025-04-27 02:49:31,774 - main.services.esp - INFO - db creating
+2025-04-27 02:49:31,778 - main.services.auth - INFO - db creating
+2025-04-27 02:49:31,949 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:49:31,951 - main.__init__ - INFO - db creating
+2025-04-27 02:49:31,952 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:49:31,969 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:49:31,969 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:49:32,053 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:49:32,055 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:49:32,131 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:49:32,133 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:49:32,206 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:49:32,278 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:49:54,923 - main.routers.auth - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:49:54,923 - main.services.auth_service - INFO - Попытка аутентификации пользователя: Sadovnikov, пароль: СЫЫР
+2025-04-27 02:52:35,858 - main - INFO - db creating
+2025-04-27 02:52:36,532 - main.services.esp - INFO - db creating
+2025-04-27 02:52:36,536 - main.services.auth - INFO - db creating
+2025-04-27 02:52:36,710 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:52:36,712 - main.__init__ - INFO - db creating
+2025-04-27 02:52:36,713 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:52:36,730 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:52:36,731 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:52:36,822 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:52:36,824 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:52:36,898 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:52:36,900 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:52:36,974 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:52:37,053 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:53:26,916 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:53:27,252 - main - INFO - db creating
+2025-04-27 02:53:27,952 - main.services.esp - INFO - db creating
+2025-04-27 02:53:27,957 - main.services.auth - INFO - db creating
+2025-04-27 02:53:28,128 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:53:28,130 - main.__init__ - INFO - db creating
+2025-04-27 02:53:28,130 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:53:28,149 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:53:28,150 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:53:28,230 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:53:28,233 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:53:28,306 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:53:28,308 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:53:28,382 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:53:28,459 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:54:10,220 - main.api.app - INFO - Stopping lifespan...
+2025-04-27 02:54:10,521 - main - INFO - db creating
+2025-04-27 02:54:11,257 - main.services.esp - INFO - db creating
+2025-04-27 02:54:11,262 - main.services.auth - INFO - db creating
+2025-04-27 02:54:11,445 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:54:11,446 - main.__init__ - INFO - db creating
+2025-04-27 02:54:11,447 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:54:11,465 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:54:11,465 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:54:11,554 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:54:11,556 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:54:11,741 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:54:11,743 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:54:11,825 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:54:11,904 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-04-27 02:55:15,418 - main - INFO - db creating
+2025-04-27 02:55:16,141 - main.services.esp - INFO - db creating
+2025-04-27 02:55:16,146 - main.services.auth - INFO - db creating
+2025-04-27 02:55:16,310 - main.services.esp.__init__ - INFO - db creating
+2025-04-27 02:55:16,312 - main.__init__ - INFO - db creating
+2025-04-27 02:55:16,313 - main.services.auth.__init__ - INFO - db creating
+2025-04-27 02:55:16,330 - main.api.app - INFO - Starting lifespan...
+2025-04-27 02:55:16,330 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-04-27 02:55:16,410 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-04-27 02:55:16,412 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-04-27 02:55:16,490 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-04-27 02:55:16,492 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-04-27 02:55:16,588 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-04-27 02:55:16,675 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 16:17:34,032 - main - INFO - db creating
+2025-05-01 16:17:34,412 - __main__ - INFO - Starting Uvicorn server...
+2025-05-01 16:17:34,422 - main.utils.ssl_utils - INFO - SSL сертификаты в порядке
+2025-05-01 16:17:34,422 - __main__ - INFO - SSL/TLS успешно настроен
+2025-05-01 16:17:34,423 - __main__ - INFO - Запуск сервера https://192.168.0.133:5000
+2025-05-01 16:17:34,649 - main - INFO - db creating
+2025-05-01 16:17:35,813 - main.services.esp - INFO - db creating
+2025-05-01 16:17:35,868 - main.services.auth - INFO - db creating
+2025-05-01 16:17:35,878 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 16:17:35,879 - main.__init__ - INFO - db creating
+2025-05-01 16:17:35,880 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 16:17:35,896 - main.api.app - INFO - Starting lifespan...
+2025-05-01 16:17:35,896 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 16:17:36,032 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 16:17:36,034 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 16:17:36,111 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 16:17:36,113 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 16:17:36,188 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 16:17:36,294 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 16:20:58,825 - main.services.esp.get_info - INFO - Получение данных всех mac (страница 1, по 10 записей)
+2025-05-01 16:22:10,855 - main.api.app - INFO - Stopping lifespan...
+2025-05-01 16:22:11,149 - main - INFO - db creating
+2025-05-01 16:22:11,861 - main.services.esp - INFO - db creating
+2025-05-01 16:22:11,905 - main.services.auth - INFO - db creating
+2025-05-01 16:22:11,914 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 16:22:11,916 - main.__init__ - INFO - db creating
+2025-05-01 16:22:11,917 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 16:22:11,935 - main.api.app - INFO - Starting lifespan...
+2025-05-01 16:22:11,935 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 16:22:12,016 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 16:22:12,018 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 16:22:12,093 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 16:22:12,094 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 16:22:12,168 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 16:22:12,243 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 16:22:15,905 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-05-01 16:23:04,638 - main.api.app - INFO - Stopping lifespan...
+2025-05-01 16:23:04,926 - main - INFO - db creating
+2025-05-01 16:23:05,651 - main.services.esp - INFO - db creating
+2025-05-01 16:23:05,696 - main.services.auth - INFO - db creating
+2025-05-01 16:23:05,706 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 16:23:05,707 - main.__init__ - INFO - db creating
+2025-05-01 16:23:05,708 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 16:23:05,726 - main.api.app - INFO - Starting lifespan...
+2025-05-01 16:23:05,727 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 16:23:05,813 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 16:23:05,815 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 16:23:05,896 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 16:23:05,898 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 16:23:05,971 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 16:23:06,051 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 16:23:06,352 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-05-01 16:23:08,507 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-05-01 16:28:53,292 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 12, по 10 записей)
+2025-05-01 16:29:04,799 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-05-01 16:29:19,385 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 10, по 10 записей)
+2025-05-01 16:29:29,614 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-05-01 16:35:48,168 - main.api.app - INFO - Stopping lifespan...
+2025-05-01 16:35:48,461 - main - INFO - db creating
+2025-05-01 16:35:49,212 - main.services.esp - INFO - db creating
+2025-05-01 16:35:49,273 - main.services.auth - INFO - db creating
+2025-05-01 16:35:49,284 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 16:35:49,285 - main.__init__ - INFO - db creating
+2025-05-01 16:35:49,286 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 16:35:49,310 - main.api.app - INFO - Starting lifespan...
+2025-05-01 16:35:49,310 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 16:35:49,394 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 16:35:49,397 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 16:35:49,475 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 16:35:49,477 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 16:35:49,553 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 16:35:49,629 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 16:35:50,991 - main.services.esp.get_info - INFO - Получение данных всех esp (страница 1, по 10 записей)
+2025-05-01 17:55:43,187 - main.api.app - INFO - Stopping lifespan...
+2025-05-01 17:55:43,482 - main - INFO - db creating
+2025-05-01 17:55:44,203 - main.services.esp - INFO - db creating
+2025-05-01 17:55:44,246 - main.services.auth - INFO - db creating
+2025-05-01 17:55:44,257 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 17:55:44,258 - main.__init__ - INFO - db creating
+2025-05-01 17:55:44,259 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 17:55:44,276 - main.api.app - INFO - Starting lifespan...
+2025-05-01 17:55:44,276 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 17:55:44,356 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 17:55:44,358 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 17:55:44,432 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 17:55:44,435 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 17:55:44,507 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 17:55:44,582 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 23:24:12,174 - main.api.app - INFO - Stopping lifespan...
+2025-05-01 23:24:12,524 - main - INFO - db creating
+2025-05-01 23:24:13,270 - main.services.esp - INFO - db creating
+2025-05-01 23:24:13,318 - main.services.auth - INFO - db creating
+2025-05-01 23:24:13,329 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 23:24:13,330 - main.__init__ - INFO - db creating
+2025-05-01 23:24:13,331 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 23:24:13,351 - main.api.app - INFO - Starting lifespan...
+2025-05-01 23:24:13,352 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 23:24:13,439 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 23:24:13,440 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 23:24:13,518 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 23:24:13,520 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 23:24:13,596 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 23:24:13,672 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 23:24:19,337 - main.services.esp.get_info - INFO - Получение данных всех mac (страница 1, по 10 записей)
+2025-05-01 23:24:21,036 - main.services.esp.get_info - INFO - Получение данных всех mac (страница 1, по 10 записей)
+2025-05-01 23:55:43,181 - main.api.app - INFO - Stopping lifespan...
+2025-05-01 23:55:43,482 - main - INFO - db creating
+2025-05-01 23:55:44,198 - main.services.esp - INFO - db creating
+2025-05-01 23:55:44,244 - main.services.auth - INFO - db creating
+2025-05-01 23:55:44,255 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 23:55:44,256 - main.__init__ - INFO - db creating
+2025-05-01 23:55:44,257 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 23:55:44,274 - main.api.app - INFO - Starting lifespan...
+2025-05-01 23:55:44,274 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 23:55:44,366 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 23:55:44,368 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 23:55:44,447 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 23:55:44,449 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 23:55:44,527 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 23:55:44,603 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-01 23:55:44,959 - main - INFO - db creating
+2025-05-01 23:55:45,691 - main.services.esp - INFO - db creating
+2025-05-01 23:55:45,736 - main.services.auth - INFO - db creating
+2025-05-01 23:55:45,745 - main.services.esp.__init__ - INFO - db creating
+2025-05-01 23:55:45,746 - main.__init__ - INFO - db creating
+2025-05-01 23:55:45,747 - main.services.auth.__init__ - INFO - db creating
+2025-05-01 23:55:45,765 - main.api.app - INFO - Starting lifespan...
+2025-05-01 23:55:45,765 - main.__init__ - INFO - Создание таблицы UUIDS
+2025-05-01 23:55:45,846 - main.__init__ - INFO - Таблица uuids создана/проверена
+2025-05-01 23:55:45,849 - main.services.esp.__init__ - INFO - Создание таблицы esp
+2025-05-01 23:55:45,932 - main.services.esp.__init__ - INFO - Таблица esp создана/проверена
+2025-05-01 23:55:45,934 - main.services.auth.__init__ - INFO - Создание таблицы users
+2025-05-01 23:55:46,007 - main.services.auth.__init__ - INFO - Таблица users создана/проверена
+2025-05-01 23:55:46,083 - main.services.auth_service - INFO - Пользователь Sadovnikov уже существует
+2025-05-02 00:07:11,509 - main.api.app - INFO - Stopping lifespan...
