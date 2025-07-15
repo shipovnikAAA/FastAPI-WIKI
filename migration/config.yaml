@@ -1,0 +1,44 @@
+#|=============================|
+#|    by ShipovnikAAA(iba)     |
+#|=============================|
+
+
+# Server settings your wiki application
+app-setings:
+    host: 0.0.0.0
+    port: 8000
+    reload: True
+    debug: True
+
+
+# This conficuration block is responsible for data storage.
+databases:
+  # How should the application storage data
+  # possible option : MYSQL, SQLITE, POSTGRESQL, ~soon: MARIADB
+  type:
+    users: sqlite
+    data: sqlite
+  # if you use databse such as: MYSQL, POSTGRESQL, ~soon: MARIADB, you must configurate this fields
+  settings:
+    users:
+      database: '' # If you use SQLITE, you can type there path to db file
+      host: ''
+      port: ''
+      username: ''
+      password: ''
+      db-min-size: ''
+      db-max-size: ''
+      max-queries: ''
+      max-inactive-connection-lifetime: ''
+      timeout:
+    data:
+      database: '' # If you use SQLITE, you can type there path to db file
+      host: ''
+      port: ''
+      username: ''
+      password: ''
+      db-min-size: ''
+      db-max-size: ''
+      max-queries: ''
+      max-inactive-connection-lifetime: ''
+      timeout: ''

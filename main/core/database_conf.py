@@ -27,54 +27,127 @@ class configurate_database:
         """
         return self.path
     
-    
-async def get_database_pool_data() -> asyncpg.Pool:
-    """Создает и возвращает пул соединений с базой данных."""
-    print(DATABASE_DATA.DBNAME, DATABASE_DATA.DB_USER, DATABASE_DATA.DB_PASSWORD, DATABASE_DATA.DB_HOST, DATABASE_DATA.DB_PORT)
-    return await asyncpg.create_pool(
-        database=DATABASE_DATA.DBNAME,
-        user=DATABASE_DATA.DB_USER,
-        password=DATABASE_DATA.DB_PASSWORD,
-        host=DATABASE_DATA.DB_HOST,
-        port=DATABASE_DATA.DB_PORT,
-        min_size=10,
-        max_size=100,
-        max_queries=50000,
-        max_inactive_connection_lifetime=60,
-        timeout=30
-    )
+class DataBase:
+    class data:
+        class PostgreSQL:
+            @staticmethod
+            async def get_pool() -> asyncpg.Pool:
+                """Создает и возвращает пул соединений с базой данных."""
+                return await asyncpg.create_pool(
+                    database=DATABASE_DATA.DBNAME,
+                    user=DATABASE_DATA.DB_USER,
+                    password=DATABASE_DATA.DB_PASSWORD,
+                    host=DATABASE_DATA.DB_HOST,
+                    port=DATABASE_DATA.DB_PORT,
+                    min_size=10,
+                    max_size=100,
+                    max_queries=50000,
+                    max_inactive_connection_lifetime=60,
+                    timeout=30
+                )
+            @staticmethod
+            async def get_connection() -> asyncpg.Connection:
+                """Создает и возвращает соединение с базой данных."""
+                return await asyncpg.connect(
+                    database=DATABASE_DATA.DBNAME,
+                    user=DATABASE_DATA.DB_USER,
+                    password=DATABASE_DATA.DB_PASSWORD,
+                    host=DATABASE_DATA.DB_HOST,
+                    port=DATABASE_DATA.DB_PORT,
+                )
+        class MySQL:
+            @staticmethod
+            async def get_pool():
+                ...
+            @staticmethod
+            async def get_connection():
+                ...
+        class SQLite:
+            @staticmethod
+            async def get_pool():
+                ...
+            @staticmethod
+            async def get_connection():
+                ...
+    class Users:
+        class PostgreSQL:
+            @staticmethod
+            async def get_pool() -> asyncpg.Pool:
+                """Создает и возвращает пул соединений с базой данных."""
+                return await asyncpg.create_pool(
+                    database=DATABASE_USERS.DBNAME,
+                    user=DATABASE_USERS.DB_USER,
+                    password=DATABASE_USERS.DB_PASSWORD,
+                    host=DATABASE_USERS.DB_HOST,
+                    port=DATABASE_USERS.DB_PORT,
+                    min_size=10,
+                    max_size=100,
+                    max_queries=50000,
+                    max_inactive_connection_lifetime=60,
+                    timeout=30
+                )
+            @staticmethod
+            async def get_connection() -> asyncpg.Connection:
+                """Создает и возвращает соединение с базой данных."""
+                return await asyncpg.connect(
+                    database=DATABASE_USERS.DBNAME,
+                    user=DATABASE_USERS.DB_USER,
+                    password=DATABASE_USERS.DB_PASSWORD,
+                    host=DATABASE_USERS.DB_HOST,
+                    port=DATABASE_USERS.DB_PORT,
+                )
+        class MySQL:
+            @staticmethod
+            async def get_pool():
+                ...
+            @staticmethod
+            async def get_connection():
+                ...
+        class SQLite:
+            @staticmethod
+            async def get_pool():
+                ...
+            @staticmethod
+            async def get_connection():
+                ...
 
-async def get_database_connection_data() -> asyncpg.Connection:
-    """Создает и возвращает соединение с базой данных."""
-    return await asyncpg.connect(
-        database=DATABASE_DATA.DBNAME,
-        user=DATABASE_DATA.DB_USER,
-        password=DATABASE_DATA.DB_PASSWORD,
-        host=DATABASE_DATA.DB_HOST,
-        port=DATABASE_DATA.DB_PORT,
-    )
-    
-async def get_database_pool_users() -> asyncpg.Pool:
-    """Создает и возвращает пул соединений с базой данных."""
-    return await asyncpg.create_pool(
-        database=DATABASE_USERS.DBNAME,
-        user=DATABASE_USERS.DB_USER,
-        password=DATABASE_USERS.DB_PASSWORD,
-        host=DATABASE_USERS.DB_HOST,
-        port=DATABASE_USERS.DB_PORT,
-        min_size=10,
-        max_size=100,
-        max_queries=50000,
-        max_inactive_connection_lifetime=60,
-        timeout=30
-    )
-
-async def get_database_connection_users() -> asyncpg.Connection:
-    """Создает и возвращает соединение с базой данных."""
-    return await asyncpg.connect(
-        database=DATABASE_USERS.DBNAME,
-        user=DATABASE_USERS.DB_USER,
-        password=DATABASE_USERS.DB_PASSWORD,
-        host=DATABASE_USERS.DB_HOST,
-        port=DATABASE_USERS.DB_PORT,
-    )
+async def get_pool(db, table):
+    match db.lower():
+        case 'sqlite':
+            if table.lower() == 'users':
+                connector = DataBase.Users.SQLite.get_pool()
+            else:
+                connector = DataBase.data.SQLite.get_pool()
+        case 'mysql':
+            if table.lower() == 'users':
+                connector = DataBase.Users.MySQL.get_pool()
+            else:
+                connector = DataBase.data.MySQL.get_pool()
+        case 'postgresql':
+            if table.lower() == 'users':
+                connector = DataBase.Users.PostgreSQL.get_pool()
+            else:
+                connector = DataBase.data.PostgreSQL.get_pool()
+        case _:
+            raise ValueError("Unknown DB type")
+    return connector
+async def get_connection(db, table):
+    match db.lower():
+        case 'sqlite':
+            if table.lower() == 'users':
+                connector = DataBase.Users.SQLite.get_connection()
+            else:
+                connector = DataBase.data.SQLite.get_connection()
+        case 'mysql':
+            if table.lower() == 'users':
+                connector = DataBase.Users.MySQL.get_connection()
+            else:
+                connector = DataBase.data.MySQL.get_connection()
+        case 'postgresql':
+            if table.lower() == 'users':
+                connector = DataBase.Users.PostgreSQL.get_connection()
+            else:
+                connector = DataBase.data.PostgreSQL.get_connection()
+        case _:
+            raise ValueError("Unknown DB type")
+    return connector
